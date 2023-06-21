@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+<body>
+
+    <!--Sub-Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" class="fa" onclick="hideMenu()" alt="delete-sign"/>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" class="fa" onclick="showMenu()" alt="menu--v1"/>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- End of sub-header section -->
+
+ <!-- Course section -->
+ <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>School</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam quisquam ut voluptatem maxime, itaque at molestias fugit dolorum, fugiat nam. Fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque magni eligendi reiciendis.</p>
+        </div>
+        <div class="course-col">
+            <h3>Undergraduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam quisquam ut voluptatem maxime, itaque at molestias fugit dolorum, fugiat nam. Fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas quam itaque.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam quisquam ut voluptatem maxime, itaque at molestias fugit dolorum, fugiat nam. Fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis earum magni commodi!</p>
+        </div>
+    </div>
+</section>
+<!-- End of course section -->
+
+
+
+<!-- Footer section -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis  veniam non quo distinctio <br> eos voluptatum itaque eaque enim, eum, quia mollitia.</p>
+    <div class="icons">
+        <img height="20px"src="img/fb.png" alt="">
+        <img height="20px"src="img/linkedin.png" alt="">
+        <img height="20px" src="img/instagram.png" alt="">
+        <img height="20px" src="img/twitter.png" alt="">
+    </div>
+    <p>Made with Love</p>
+</section>
+<!-- End of footer section -->
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navlinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+<body>
+
+    <!--Sub-Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" class="fa" onclick="hideMenu()" alt="delete-sign"/>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" class="fa" onclick="showMenu()" alt="menu--v1"/>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- End of sub-header section -->
+
+    <!-- Contact us section -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0050237574414!2d68.28073077363166!3d25.438095577556627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c79b520f6b0cb%3A0xb47fcd4be8168ea7!2smehran%20university!5e0!3m2!1sen!2s!4v1686143949748!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <img src="img/home.png" alt="">
+                    <span>
+                        <h5>Mehran University of Engineering and Technology, Indus Hwy</h5>
+                        <p>Jamshoro, Sindh 76062</p>
+                    </span>
+                </div>
+                <div>
+                    <img src="img/phone.png" alt="">
+                    <span>
+                        <h5>+92 (22) 2772250-73</h5>
+                        <p>Mon to Fri, 8AM to 3PM</p>
+                    </span>
+                </div>
+                <div>
+                    <img src="img/env.png" alt="">
+                    <span>
+                        <h5>admin.muet.edu.pk</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                   <input type="text" placeholder="Enter Your Name" required>
+                   <input type="email" placeholder="Enter Your Email Address" required>  
+                   <input type="text" placeholder="Enter Your Subject" required>
+                   <textarea rows="8" placeholder="Message" required></textarea>
+                   <button type="submit" class="hero-btn">Send Message</button> 
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of contact us section -->
+
+   
+
+<!-- Footer section -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis  veniam non quo distinctio <br> eos voluptatum itaque eaque enim, eum, quia mollitia.</p>
+    <div class="icons">
+        <img height="20px"src="img/fb.png" alt="">
+        <img height="20px"src="img/linkedin.png" alt="">
+        <img height="20px" src="img/instagram.png" alt="">
+        <img height="20px" src="img/twitter.png" alt="">
+    </div>
+    <p>Made with Love</p>
+</section>
+<!-- End of footer section -->
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navlinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

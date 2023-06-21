@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+<body>
+
+    <!--Sub-Header section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <img src="https://img.icons8.com/ios-glyphs/30/delete-sign.png" class="fa" onclick="hideMenu()" alt="delete-sign"/>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="https://img.icons8.com/ios-filled/50/menu--v1.png" class="fa" onclick="showMenu()" alt="menu--v1"/>
+        </nav>
+        <h1>Our Certificates & Programs for 2023</h1>
+    </section>
+    <!-- End of sub-header section -->
+
+ <!-- Blog page content -->
+ <section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="img/certificate.jpg" alt="">
+            <h2>Our Certificates & Programs for 2023</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quo harum rerum veritatis doloremque in iure modi quisquam eaque ad perferendis illo repudiandae quidem nostrum cumque ipsa, officia accusantium quis aperiam. Eos ducimus tempora reprehenderit a magnam rem. Dicta, sunt?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nulla voluptatem libero perferendis at consequatur corrupti eius assumenda quasi eveniet saepe quaerat neque, cumque deserunt recusandae deleniti eos et dignissimos voluptatum expedita. Minus provident reiciendis tenetur! Reiciendis minus inventore excepturi minima enim molestiae quaerat, dolorem sunt sit libero ab itaque.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa incidunt eum deleniti hic saepe assumenda molestiae, blanditiis quam magni, autem minima optio accusantium corporis necessitatibus earum iste quas quo tempore suscipit officiis porro iusto non illum? Ratione, a sit. At, adipisci quis! Maxime esse harum laborum odio accusamus nesciunt accusantium!</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam odio architecto laudantium mollitia molestias error iusto laborum, dignissimos quas, beatae accusantium, ipsam quos inventore fuga sed animi suscipit! Incidunt quos praesentium rem illum deleniti tempore nihil consequuntur, cupiditate temporibus labore, saepe recusandae natus esse tenetur!</p>
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn">POST COMMENT</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post categories</h3>
+            <div>
+                <span>Software Engineering</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Computer System</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>Electrical Engineering</span>
+                <span>25</span>
+            </div>
+            <div>
+                <span>Bio Medical</span>
+                <span>10</span>
+            </div>
+            <div>
+                <span>Telecommunication</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>Electronics</span>
+                <span>16</span>
+            </div>
+            <div>
+                <span>Petroleum</span>
+                <span>10</span>
+            </div>
+        </div>
+    </div>
+ </section>
+  <!-- End Blog page content -->
+
+
+
+<!-- Footer section -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis  veniam non quo distinctio <br> eos voluptatum itaque eaque enim, eum, quia mollitia.</p>
+    <div class="icons">
+        <img height="20px"src="img/fb.png" alt="">
+        <img height="20px"src="img/linkedin.png" alt="">
+        <img height="20px" src="img/instagram.png" alt="">
+        <img height="20px" src="img/twitter.png" alt="">
+    </div>
+    <p>Made with Love</p>
+</section>
+<!-- End of footer section -->
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navlinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
